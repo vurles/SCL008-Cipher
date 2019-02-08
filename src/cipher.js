@@ -5,7 +5,7 @@
 //hago un if para ver si pasa la condicion de mayusculas y aplico la formula de ex michel con el offset como parametro
 //tomo nuevo codigo ascii y lo paso a string
 //realizo else if para dejar los gatos como gatos 
-//
+//realizo else if para dejar los espacios talcual
 window.cipher = {
   encode: (offset, text) => {
     let result ="";
@@ -18,6 +18,8 @@ window.cipher = {
         result += String.fromCharCode(formula);
       }else if (asci === 35){
         result += '#'
+      }else if(asci === 32){ // 
+        result += ' '
       }
      
     }
