@@ -1,1 +1,26 @@
 /* Acá va tu código */
+#coder{
+    display: none;
+}
+body{
+    background-image: url("img/1482272181-istock000057157136large-4000x2667.jpg");
+    background-size:cover; 
+}
+.container{
+    text-align: center;
+    display: block;
+}
+.comensar{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 26px;
+    margin-top: 3%;
+   
+}
+h1, p {
+    color: rgb(180, 175, 175);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p {
+    
+    font-size: 26px;
+}

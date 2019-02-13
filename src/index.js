@@ -9,9 +9,15 @@ document.getElementById('hello').addEventListener ('click', (evento) =>{
 
 })
 document.getElementById('cifrar').addEventListener('click', () =>{
-    let text = document.getElementById('direccion').value;
+    let text = document.getElementById('direccion').value.toUpperCase();
     let offset = document.getElementById('desplaz').value;
     let result = window.cipher.encode(offset, text);
+    document.getElementById('resultado').innerHTML = result;
+} )
+document.getElementById('descifrar').addEventListener('click', () =>{
+    let text = document.getElementById('direccion').value.toUpperCase();
+    let offset = document.getElementById('desplaz').value;
+    let result = window.cipher.decode(offset, text);
     document.getElementById('resultado').innerHTML = result;
 } )
 

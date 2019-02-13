@@ -3,28 +3,60 @@
   <head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="root"> </div>
-    <div id="welcome">
-      <p>holii</p>
-      <button id="hello">tocame</button>
+    <div id="welcome" class="container">
+      <h1>CesarParty</h1>
+      <p>Cansado de los paracaidistas que arruinan la fiesta, esta es la App que estas buscando. CesarParty cifra la direccion donde se realizará el evento a festejar, esto se puede gracias al medoto Cesar que desplaza las letras cierta cantidad determinada remplazando por otras, a continuacion se da un ejemplo de cifrado con un desplazamiento de 3</p>
+      <img src="img/cifrado-cesar.png" alt="desplazamientoDeTres">
+      <div>
+        <button class="comensar" id="hello">Comenzar</button>
+      </div>
+      
     </div>
-    <div id="coder">
-      <input type="number" placeholder="Offset" id="desplaz">
-      <textarea type="text" placeholder="ej: ROMA 1234" id="direccion" cols="30" rows="10"></textarea>
-      <button id="cifrar">CIFRAR</button>
-      <button id="descifrar">DESCIFRAR</button>
-      <button id="compartir">COMPARTIR</button>
-      <textarea placeholder="ej: " id="direccion" cols="30" rows="10"></textarea>
-    </div>
-    
+    <section class="container-fluid">
+      <div id="coder" class="container">
+        <div>
+          <h1>CesarParty</h1>
+          <p>Tu App. para filtrar a los NO invitados!!</p>
+          <p>Ingreza el numero a desplazar tu mensaje</p>
+          <input type="number" placeholder="Ej: 3" id="desplaz">
+        </div>
+        <div>
+          <p>Ingreza la dieccion que quieres cifrar</p>
+          <input type="text" placeholder="Ej: ROMA #227" id="direccion" cols="30" rows="10">
+           <!--<textarea type="text" ></textarea>--> 
+        </div>
+        <div>
+            <button id="cifrar" class="btn btn-primary">CIFRAR</button>
+            <button id="descifrar" class="btn btn-primary">DESCIFRAR</button>
+        </div>
+        <div>
+            <button id="compartir" class="btn btn-success">COMPARTIR</button>
+        </div>
+        <div></div>
+          <p>Resultado de la dirección cifrada</p>
+            <textarea disabled placeholder="Ej: URPD #550" id="resultado" cols="20" rows="8"></textarea>
+          <h3>Recuerda compartir el numero de desplazamiento junto con tu nueva dirección</h3>
+        </div>
+      
+    </section>
 
-
+    <!--  <section>
+        <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Ej: Puma # 1180, Recoleta</span>
+            </div>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+          </div>
+    </section>  -->
     
-     
-   
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
