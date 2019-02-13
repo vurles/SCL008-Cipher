@@ -23,6 +23,8 @@ window.cipher = {
         result += '#'
       }else if(asci === 32){ // 
         result += ' '
+      }else{ asci === 164 
+        result += 'ñ'
       }
      
     }
@@ -45,6 +47,8 @@ window.cipher = {
         result += '#'
       }else if(asci === 32){ // 
         result += ' '
+      }else{ asci === 164 
+        result += 'ñ'
       }
      
     }
