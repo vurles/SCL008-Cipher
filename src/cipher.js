@@ -38,6 +38,9 @@ window.cipher = {
       if(asci >= 65 && asci <=90){
         let formula = (asci - 90 - parseInt(offset)) % 26 + 90;
         result += String.fromCharCode(formula);
+      }else if (asci >=48 && asci<=57) {
+        let asciNum = (asci - 48 - parseInt(offset) % 10) + 48;
+        result += String.fromCharCode(asciNum)
       }else if (asci === 35){
         result += '#'
       }else if(asci === 32){ // 
